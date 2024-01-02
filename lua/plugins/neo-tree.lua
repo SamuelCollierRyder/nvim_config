@@ -9,7 +9,11 @@ return {
   config = function()
     vim.keymap.set('n', '<leader>f', ':Neotree filesystem reveal bottom<CR>')
     require("neo-tree").setup({
-      close_if_last_window = true
+      close_if_last_window = true,
+      window = {
+        position = "bottom",
+        height = 10,
+      },
     })
   end
 }
