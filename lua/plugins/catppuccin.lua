@@ -10,6 +10,5 @@ return {
         vim.cmd.colorscheme "catppuccin"
         vim.api.nvim_set_hl(0, "NormalFloat", {bg="#3B4252"})
         vim.diagnostic.config({signs = false})
-        vim.diagnostic.config({update_in_insert=true})
     end
 }
