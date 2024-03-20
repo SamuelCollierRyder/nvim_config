@@ -15,3 +15,9 @@ vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
 vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
 vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
+
+-- Map ctrl c to escape
+vim.cmd("inoremap <c-c> <esc>")
+
+-- Caseinsensitive search
+vim.cmd("set ignorecase")
