@@ -27,11 +27,6 @@ return {
         position = "left",
         width = 30,
       },
-        default_component_configs = {
-          modified = {
-            symbol = "C",
-          }
-        }
     })
   end
 }
