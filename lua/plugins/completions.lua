@@ -35,6 +35,8 @@ return {
                         behavior = cmp.ConfirmBehavior.Replace,
                         select = true,
                     }),
+                    ["<C-r>"] = cmp.mapping.complete(),
+                    ["<C-e>"] = cmp.mapping.abort(),
                 }),
                 sources = cmp.config.sources({
                     { name = "copilot" },

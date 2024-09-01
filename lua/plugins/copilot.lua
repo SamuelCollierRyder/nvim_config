@@ -1,10 +1,16 @@
 return {
-    "zbirenbaum/copilot.lua",
+	"zbirenbaum/copilot.lua",
 
-    config = function()
-        require("copilot").setup({
-            suggestion = { enabled = false },
-            panel = { enabled = false },
-        })
-    end,
+	config = function()
+		require("copilot").setup({
+			suggestion = {
+				enabled = true,
+				auto_trigger = true,
+				keymap = {
+					accept = "<S-Tab>",
+                    next = "<C-Tab>"
+				},
+			},
+		})
+	end,
 }
