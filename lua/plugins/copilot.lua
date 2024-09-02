@@ -8,7 +8,7 @@ return {
 				auto_trigger = true,
 				keymap = {
 					accept = "<S-Tab>",
-                    next = "<C-Tab>"
+                    dismiss = "<C-e>",
 				},
 			},
 		})
