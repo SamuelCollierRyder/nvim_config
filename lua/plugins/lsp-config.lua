@@ -20,7 +20,7 @@ return {
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
 			lspconfig.pyright.setup({ capabilities = capabilities })
-			lspconfig.tsserver.setup({ capabilities = capabilities })
+			lspconfig.ts_ls.setup({ capabilities = capabilities })
 			lspconfig.emmet_language_server.setup({ capabilities = capabilities })
 			lspconfig.jdtls.setup({ capabilities = capabilities })
 			lspconfig.cssls.setup({ capabilities = capabilities })
