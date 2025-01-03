@@ -7,7 +7,10 @@ return {
 				null_ls.builtins.formatting.stylua,
 				null_ls.builtins.formatting.black,
 				null_ls.builtins.formatting.prettier,
-                null_ls.builtins.formatting.google_java_format,
+                -- asop flag ensures 4 spaces indentation
+				null_ls.builtins.formatting.google_java_format.with({
+					extra_args = { "--aosp" },
+				}),
 			},
 		})
 		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
